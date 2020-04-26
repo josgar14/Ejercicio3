@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inf_Registrar_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registro"
+                    android:layout_gravity="center"
+                    android:textColor="#123456"
+                    android:textSize="25dp"/>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imagenId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_titulo"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_action_name"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnCargarImg"
+                    android:onClick="cargarfoto"
+                    android:text="Cargar foto"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/idnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:hint="@string/nombre"/>
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/idmatricula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:hint="@string/Matricula"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/idnacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:hint="@string/Ciudad_de_nacimiento"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/idexpresion_creativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:hint="@string/Expresion_creativa"
+                android:inputType="textMultiLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_save"
+                    android:layout_below="@+id/txt_texto"
+                    android:layout_centerHorizontal="true"
+                    android:text="Guardar"
+                    android:onClick="alta"
+                    android:textStyle="bold"
+                    android:textColor="@color/blackcolor"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/borde"
+
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_search"
+                    android:layout_below="@+id/txt_texto"
+                    android:layout_centerHorizontal="true"
+                    android:text="Buscar"
+                    android:onClick="consultapormatricula"
+                    android:textStyle="bold"
+                    android:textColor="@color/blackcolor"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/borde"
+
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_edit"
+                    android:layout_below="@+id/txt_texto"
+                    android:layout_centerHorizontal="true"
+                    android:text="Modificar"
+                    android:onClick="modificar"
+                    android:textStyle="bold"
+                    android:textColor="@color/blackcolor"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/borde"
+
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_delete"
+                    android:layout_below="@+id/txt_texto"
+                    android:layout_centerHorizontal="true"
+                    android:text="Borrar"
+                    android:onClick="bajaporcodigo"
+                    android:textStyle="bold"
+                    android:textColor="@color/blackcolor"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/borde"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
